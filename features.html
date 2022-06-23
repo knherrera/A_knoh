@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/my_style.css">
+    <title>knoh | welcome! </title>
+    <!-- <style>
+    .fullclick {
+      margin: 1em 0;
+      padding: 0;
+      max-width: 30em;
+    }
+    .fullclick li {
+      list-style: none;
+      margin: 1em 0;
+      padding: 20px 10px;
+      background: #2b2b2b;
+      position: relative;
+      transition: 400ms;
+    }
+    .todelete {
+      opacity: 0;
+    }
+   .fullclick p a {
+      color: lime;
+      z-index: 2;
+      position: relative;
+    }
+    .fullclick a.main {
+      color: #85baff;
+      text-align: right;
+      display: block;
+      z-index: 1;
+    }
+    .fullclick li a.main::after {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      content: ' ';
+    }
+    .fullclick:hover a.main, 
+    .fullclick:focus-within a.main {
+      color: #cfe4ff;
+    }
+    .fullclick li button {
+      z-index: 2;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      opacity: 0;
+      transition: 400ms;
+      border: none;
+      color: #fff;
+      background: #333;
+    }
+    .fullclick li:hover button, 
+    .fullclick li:focus-within button {
+      opacity: 1;
+    }
+    .fullclick li:hover, .fullclick li:focus-within {
+      background:#484848;
+      box-shadow: 0px 3px 6px #000;
+    }
+
+    </style> -->
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">knoh.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hometown</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                    <li><a href="silly.html">Silly</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="features-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Features</h1>
+                <p class="lead">
+                    Stay in the "knoh"!
+                </p>
+            </div>
+            <img src="images1/rickrolled_QR.png" alt="">
+        </div>
+    </section>
+
+    <!-- Sub head -->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Check out my work:</h1>
+                <ul>
+                    
+                    
+                </ul>
+            </div>
+            <div></div>
+            <div>
+                <ul>
+                    <li>Pottery</li>
+                    
+                </ul>
+            </div>
+            <img src="images1/pottery1.png" alt="">
+            <div>
+                <ul>
+                   <li>Photography</li>   
+                </ul>
+            </div>
+            <img src="images1/camera-icon-png-8.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="features-main my-2">
+        <div class="container-main grid grid-3">
+            <ul class="fullclick">
+                <li>
+                    <div class="card flex">
+                        <img src="images1/eclipse1.jpg" class="main">
+                    
+                    
+                    </div>
+                    <div class="card flex">
+                        <p>Salem, Washington - August, 26 2017</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card flex">
+                        <img src="images1/eclipse2.jpg" alt="">
+                        <p>
+                    
+                        </p>
+                    </div>
+                    <div class="card flex">
+                    
+                    </div>
+                </li>
+                <li>
+                    <div class="card flex">
+                        <img src="images1/eclipse3.jpg" alt="">
+                        <p>
+                    
+                        </p>
+                    </div>
+                    <div class="card flex">
+                    
+                    </div>
+                </li>
+                <li>
+                    <div class="card flex">
+                        <img src="images1/eclipse4.jpg" alt="">
+                        <p>
+                    
+                        </p>
+                    </div>
+                    <div class="card flex">
+                    
+                    </div>
+                </li>
+                <li>
+                    <div class="card flex">
+                        <img src="images1/eclipse5.jpg" alt="">
+                        <p>
+                    
+                        </p>
+                    </div>
+                    <div class="card flex">
+                    
+                    </div>
+                </li>
+                <li>
+                    <div class="card flex">
+                        <img src="images1/eclipse6.jpg" alt="">
+                        <p>
+                    
+                        </p>
+                    </div>
+                    <div class="card flex">
+                    
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="overlay"></div>
+    <!-- <script>
+        let list = document.querySelector('.fullclick');
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+          list.addEventListener('click', e => {
+            if (e.target.nodeName === 'BUTTON') {
+              e.target.parentNode.remove();
+            }
+          });
+        } else {
+          list.addEventListener('click', e => {
+            if (e.target.nodeName === 'BUTTON') {
+              e.target.parentNode.style.transition = '1s';
+              e.target.parentNode.className = 'todelete';
+            }
+          });
+          list.addEventListener('transitionend', e => {
+            if(e.target.classList.contains('todelete')){
+              e.target.remove();
+            }
+          });
+        }
+      </script>
+    <script src="donav.js"></script> -->
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>knoh.
+                </h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hometown</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                    <li><a href="silly.html">Silly</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

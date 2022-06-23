@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/my_style.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script defer src="sound-onclick.js"></script>
+    <script defer src="popup.js"></script>
+    <title>knoh | welcome! </title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">knoh.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hometown</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                    <li><a href="silly.html">Silly</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Head -->
+    <section class="silly-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Bored?</h1>
+                <p class="lead">
+                    Stay in the "knoh"!
+                </p>
+            </div>
+            <img src="images1/rickrolled_QR.png" alt="">
+        </div>
+    </section>
+
+    <!-- Sub head -->
+    <section class="silly-sub-head bg-light py-3">
+        <div class="container">
+            <h3 class="silly-heading text-center my-1">
+                The Monty Hall Problem
+            </h3>
+            
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    
+                    <h3 class="btn btn-primary" data-modal-target="#firstdoor">Click Me!</h3>
+                    <p class="text-secondary"></p>
+                </div>
+                <div>
+                    <h3 class="btn btn-primary" data-modal-target="#seconddoor">Click Me!</h3>
+                    <p class="text-secondary"></p>
+                </div>
+                <div>
+                    <h3 class="btn btn-primary" data-modal-target="#thirddoor">Click Me!</h3>
+                    <p class="text-secondary"></p>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+
+    </section>
+    <div class="container grid">
+        <div class="modal" id="firstdoor">
+            <div class="modal-header">
+                <div class="title">You picked the first door. Are you sure?</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+        <div class="modal-body">
+            <div class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yes.</a></div>
+            <div class="btn"><a href="https://youtu.be/1JABdS-HN5A">No.</a></div>
+        </div>
+        </div>
+        <div class="modal" id="seconddoor">
+            <div class="modal-header">
+                <div class="title">You're still playing this game?</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+        <div class="modal-body">
+            <div class="btn"><a onclick="playAudio('bonk.mp3')">Uhh</a></div>
+            <div class="btn"><a href="index.html">Nah.</a></div>
+        </div>
+        </div>
+        <div class="modal" id="thirddoor">
+            <div class="modal-header">
+                <div class="title">Fool me three times?</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+        <div class="modal-body">
+            <div class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yes.</a></div>
+            <div class="btn">No.</div>
+        </div>
+        </div>
+    </div>
+        
+    <div id="overlay"></div>
+
+
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>knoh.
+                </h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hometown</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                    <li><a href="silly.html">Silly</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://github.com/knherrera"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://twitter.com/_kebo___"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
